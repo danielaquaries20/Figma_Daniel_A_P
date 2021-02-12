@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Figma Daniel</string>
+    <string name="version_1_1">Version 1.1</string>
+    <string name="selamat_datang">Selamat Datang</string>
+    <string name="di_aplikasi_perhitungan_gizi_silahkan_masuk_terlebih_dahulu">Di aplikasi perhitungan gizi, silahkan masuk terlebih dahulu</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="lupa_kata_sandi">Lupa Kata Sandi</string>
+    <string name="login">Login</string>
+    <string name="alternatif_login">Alternatif Login</string>
+    <string name="belum_punya_akun">Belum punya akun?</string>
+    <string name="register">Register</string>
+    <string name="masukan_email_yang_terdaftar_diaplikasi_ya_kami_infokan_sandi_melalui_email">Masukan email yang terdaftar diaplikasi ya, kami infokan sandi melalui email</string>
+    <string name="kirim">Kirim</string>
+    <string name="baru_bergabung">Baru Bergabung?</string>
+    <string name="lengkapi_data_dibawah_ini_untuk_bergabung_bersama_kami">Lengkapi data dibawah ini untuk bergabung bersama kami</string>
+    <string name="nama">Nama</string>
+    <string name="no_telpon">No. Telpon</string>
+    <string name="kata_sandi_harus_min_8_karakter_dengan_min_1_angka">Kata sandi harus min 8 karakter dengan min 1 angka</string>
+    <string name="info">Info</string>
+    <string name="daftar">Daftar</string>
+    <string name="sudah_bergabung">Sudah Bergabung?</string>
+</resources>
