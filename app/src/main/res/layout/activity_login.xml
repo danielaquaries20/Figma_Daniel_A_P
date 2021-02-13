@@ -26,7 +26,8 @@
                 android:contentDescription="@null"
                 android:src="@drawable/ill_bg_mdpi"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+                app:layout_constraintTop_toTopOf="parent"
+                android:focusableInTouchMode="true"/>
 
             <TextView
                 android:id="@+id/textSelamatDatang"
@@ -98,21 +99,32 @@
                 app:layout_constraintTop_toBottomOf="@id/editTextEmail" />
 
             <EditText
-                android:id="@+id/editTextPassword"
+                android:id="@+id/editTextPasswordLogin"
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/_35sdp"
                 android:layout_marginStart="@dimen/_20ssp"
                 android:layout_marginTop="@dimen/_10sdp"
                 android:layout_marginEnd="@dimen/_20sdp"
                 android:autofillHints="@string/password"
-                android:background="@drawable/background_edit_text_2"
                 android:inputType="numberPassword"
+                android:background="@drawable/background_edit_text_2"
                 android:padding="@dimen/_5sdp"
-                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/imageVisibleLogin"
                 app:layout_constraintHorizontal_bias="1.0"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/textPassword"
                 tools:ignore="LabelFor,TextFields" />
+
+            <ImageView
+                android:id="@+id/imageVisibleLogin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_view_en_mdpi"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/textPassword"
+                android:layout_marginTop="@dimen/_18sdp"
+                android:layout_marginEnd="@dimen/_30sdp"
+                android:contentDescription="@null" />
 
 
             <TextView
@@ -124,7 +136,7 @@
                 android:text="@string/lupa_kata_sandi"
                 android:textColor="@color/colorBlue"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/editTextPassword" />
+                app:layout_constraintTop_toBottomOf="@id/editTextPasswordLogin" />
 
             <Button
                 android:id="@+id/buttonLoginLogin"

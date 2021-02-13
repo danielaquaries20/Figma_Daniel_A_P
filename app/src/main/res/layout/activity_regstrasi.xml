@@ -25,6 +25,7 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="@dimen/_17sdp"
                 android:contentDescription="@null"
+                android:focusableInTouchMode="true"
                 android:src="@drawable/ill_bg_mdpi"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
@@ -71,9 +72,9 @@
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
                 android:padding="@dimen/_20sdp"
-                app:layout_constraintTop_toBottomOf="@id/textKeteranganLengkapiData"
+                app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintEnd_toEndOf="parent">
+                app:layout_constraintTop_toBottomOf="@id/textKeteranganLengkapiData">
 
                 <TextView
                     android:layout_width="match_parent"
@@ -135,25 +136,51 @@
                     android:padding="@dimen/_5sdp"
                     tools:ignore="LabelFor" />
 
-                <TextView
+
+                <androidx.constraintlayout.widget.ConstraintLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="@dimen/_17sdp"
-                    android:text="@string/password"
-                    android:textAlignment="textStart"
-                    android:textColor="@color/colorBlack"
-                    android:textSize="@dimen/_13ssp"
-                    android:textStyle="bold" />
+                    android:layout_marginTop="@dimen/_17sdp">
 
-                <EditText
-                    android:layout_width="match_parent"
-                    android:layout_height="@dimen/_35sdp"
-                    android:layout_marginTop="@dimen/_10sdp"
-                    android:autofillHints="@string/email"
-                    android:background="@drawable/background_edit_text_2"
-                    android:inputType="numberPassword"
-                    android:padding="@dimen/_5sdp"
-                    tools:ignore="LabelFor" />
+                    <TextView
+                        android:id="@+id/textPasswordRegister"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/password"
+                        android:textAlignment="textStart"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="@dimen/_13ssp"
+                        android:textStyle="bold"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <EditText
+                        android:id="@+id/editTextPasswordRegister"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_35sdp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:autofillHints="@string/email"
+                        android:background="@drawable/background_edit_text_2"
+                        android:inputType="numberPassword"
+                        android:padding="@dimen/_5sdp"
+                        app:layout_constraintEnd_toStartOf="@id/imageVisibleRegister"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/textPasswordRegister"
+                        tools:ignore="LabelFor" />
+
+                    <ImageView
+                        android:id="@+id/imageVisibleRegister"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_18sdp"
+                        android:layout_marginEnd="@dimen/_10sdp"
+                        android:contentDescription="@null"
+                        android:src="@drawable/ic_view_en_mdpi"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/textPasswordRegister" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
 
                 <LinearLayout
                     android:layout_width="match_parent"
