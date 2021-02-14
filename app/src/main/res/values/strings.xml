@@ -20,4 +20,10 @@
     <string name="info">Info</string>
     <string name="daftar">Daftar</string>
     <string name="sudah_bergabung">Sudah Bergabung?</string>
+    <string name="google_login">Google Login</string>
+    <string name="google">Google</string>
+    <string name="facebook">Facebook</string>
+    <string name="facebook_login">Facebook Login</string>
+    <string name="email_berhasil_terkirim">Email Berhasil Terkirim</string>
+    <string name="cek_email_untuk_informasi_kata_sandi_akunmu">Cek Email untuk informasi kata sandi akunmu</string>
 </resources>

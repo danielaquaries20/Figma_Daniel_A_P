@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_bottomsheet"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:text="@string/email_berhasil_terkirim"
+        android:textAlignment="center"
+        android:textColor="@color/colorBlack"
+        android:textSize="@dimen/_14ssp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:text="@string/cek_email_untuk_informasi_kata_sandi_akunmu"
+        android:textAlignment="center"
+        android:paddingRight="@dimen/_24sdp"
+        android:paddingLeft="@dimen/_24sdp"/>
+
+    <Button
+        android:id="@+id/buttonKirimLupaSandiBottom"
+        android:layout_width="@dimen/_125sdp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/_25sdp"
+        android:background="@drawable/background_button_1"
+        android:text="@string/kirim"
+        android:textColor="@color/colorWhite"
+        android:layout_marginBottom="@dimen/_20sdp"/>
+
+</LinearLayout>

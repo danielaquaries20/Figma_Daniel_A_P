@@ -34,6 +34,11 @@ class LoginActivity : AppCompatActivity() {
             }
         }
 
+        val bottomSheetAltLoginLogin = BottomSheetAltLoginLogin()
+
+        buttonAltLoginLogin.setOnClickListener {
+            bottomSheetAltLoginLogin.show(supportFragmentManager, "BottomSheetDialog")
+        }
 
     }
 }

@@ -1,7 +1,7 @@
 package com.example.figmadaniel
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.appcompat.app.AppCompatActivity
 import kotlinx.android.synthetic.main.activity_lupa_sandi.*
 import org.jetbrains.anko.sdk27.coroutines.onClick
 
@@ -11,5 +11,11 @@ class LupaSandiActivity : AppCompatActivity() {
         setContentView(R.layout.activity_lupa_sandi)
 
         imageBackLupaSandi.onClick { onBackPressed() }
+
+        val bottomSheetKirimEmailLupaSandi = BottomSheetKirimEmailLupaSandi()
+
+        buttonKirimLupaSandi.setOnClickListener {
+            bottomSheetKirimEmailLupaSandi.show(supportFragmentManager, "Bottom Sheet Dialog")
+        }
     }
 }
