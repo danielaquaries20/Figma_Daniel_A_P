@@ -9,10 +9,18 @@ import kotlinx.android.synthetic.main.activity_login.*
 import org.jetbrains.anko.sdk27.coroutines.onClick
 
 class LoginActivity : AppCompatActivity() {
-    var isShowPassword = true
+    private var isShowPassword = false
+
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_login)
+
+        imageVisibleLogin.setOnClickListener {
+            isShowPassword = !isShowPassword
+            showPassword(isShowPassword)
+        }
+        showPassword(isShowPassword)
 
         textLupaKataSandiLogin.onClick {
             val intent = Intent(this@LoginActivity, LupaSandiActivity::class.java)
@@ -24,16 +32,6 @@ class LoginActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
-        imageVisibleLogin.onClick {
-            if (isShowPassword) {
-                editTextPasswordLogin.transformationMethod =
-                    HideReturnsTransformationMethod.getInstance()
-            } else {
-                editTextPasswordLogin.transformationMethod =
-                    PasswordTransformationMethod.getInstance()
-            }
-        }
-
         val bottomSheetAltLoginLogin = BottomSheetAltLoginLogin()
 
         buttonAltLoginLogin.setOnClickListener {
@@ -41,4 +39,21 @@ class LoginActivity : AppCompatActivity() {
         }
 
     }
+
+    private fun showPassword(isShow: Boolean) {
+        if (isShow) {
+            // To show the password
+            editTextPasswordLogin.transformationMethod =
+                HideReturnsTransformationMethod.getInstance()
+            imageVisibleLogin.setImageResource(R.drawable.ic_view_dis_mdpi)
+        } else {
+            // To hide the password
+            editTextPasswordLogin.transformationMethod = PasswordTransformationMethod.getInstance()
+            imageVisibleLogin.setImageResource(R.drawable.ic_view_en_mdpi)
+        }
+        // This line of code to put the pointer at the end of the password string
+        editTextPasswordLogin.setSelection(editTextPasswordLogin.text.toString().length)
+    }
+
+
 }

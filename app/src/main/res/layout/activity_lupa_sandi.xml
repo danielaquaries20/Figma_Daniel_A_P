@@ -75,15 +75,14 @@
                 android:text="@string/email"
                 android:textAlignment="textStart"
                 android:textColor="@color/colorBlack"
-                android:textSize="@dimen/_13ssp"
-                android:textStyle="bold" />
+                android:textSize="@dimen/_13ssp" />
 
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/_35sdp"
                 android:layout_marginTop="@dimen/_10sdp"
                 android:autofillHints="@string/email"
-                android:background="@drawable/background_edit_text_1"
+                android:background="@drawable/custom_background_edit_text"
                 android:inputType="text"
                 android:padding="@dimen/_5sdp"
                 tools:ignore="LabelFor" />
@@ -96,6 +95,7 @@
                 android:layout_marginTop="@dimen/_125sdp"
                 android:background="@drawable/background_button_1"
                 android:text="@string/kirim"
+                android:textAllCaps="false"
                 android:textColor="@color/colorWhite" />
 
 
