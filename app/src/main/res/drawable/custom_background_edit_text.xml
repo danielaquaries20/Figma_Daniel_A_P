@@ -16,7 +16,7 @@
 
             <stroke
                 android:color="@color/colorGreen"
-                android:width="@dimen/_1sdp"/>
+                android:width="@dimen/_2sdp"/>
 
         </shape>
 
@@ -36,7 +36,7 @@
 
             <stroke
                 android:color="@color/colorLightGrey"
-                android:width="@dimen/_1sdp"/>
+                android:width="@dimen/_2sdp"/>
 
         </shape>
 

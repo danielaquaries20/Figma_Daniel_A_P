@@ -38,6 +38,11 @@ class LoginActivity : AppCompatActivity() {
             bottomSheetAltLoginLogin.show(supportFragmentManager, "BottomSheetDialog")
         }
 
+        buttonLoginLogin.onClick {
+            val intent = Intent(this@LoginActivity, BottomNavigationActivity::class.java)
+            startActivity(intent)
+        }
+
     }
 
     private fun showPassword(isShow: Boolean) {

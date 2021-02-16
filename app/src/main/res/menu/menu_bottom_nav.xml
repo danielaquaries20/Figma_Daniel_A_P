@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/bahanPangan"
+        android:icon="@drawable/ic_menu_bahan_dis_mdpi"
+        android:title="@string/bahan_pangan" />
+
+    <item
+        android:id="@+id/giziIndividu"
+        android:icon="@drawable/ic_individu_dis_mdpi"
+        android:title="@string/gizi_individu"/>
+
+    <item
+        android:id="@+id/giziPopulasi"
+        android:icon="@drawable/ic_populasi_dis_mdpi"
+        android:title="@string/gizi_populasi"/>
+
+    <item
+        android:id="@+id/profil"
+        android:icon="@drawable/ic_profil_dis_mdpi"
+        android:title="@string/profil"/>
+
+
+
+
+</menu>

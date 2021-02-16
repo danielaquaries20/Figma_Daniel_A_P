@@ -26,4 +26,10 @@
     <string name="facebook_login">Facebook Login</string>
     <string name="email_berhasil_terkirim">Email Berhasil Terkirim</string>
     <string name="cek_email_untuk_informasi_kata_sandi_akunmu">Cek Email untuk informasi kata sandi akunmu</string>
+    <string name="bahan_pangan">Bahan Pangan</string>
+    <string name="gizi_individu">Gizi Individu</string>
+    <string name="gizi_populasi">Gizi Populasi</string>
+    <string name="profil">Profil</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

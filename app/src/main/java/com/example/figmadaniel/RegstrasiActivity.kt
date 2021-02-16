@@ -18,5 +18,12 @@ class RegstrasiActivity : AppCompatActivity() {
             startActivity(intent)
             finish()
         }
+
+        val bottomSheetAltLoginLogin = BottomSheetAltLoginLogin()
+
+        buttonAltLoginRegistrasi.setOnClickListener {
+            bottomSheetAltLoginLogin.show(supportFragmentManager, "BottomSheetDialog")
+        }
+
     }
 }
