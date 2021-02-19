@@ -25,5 +25,9 @@ class RegstrasiActivity : AppCompatActivity() {
             bottomSheetAltLoginLogin.show(supportFragmentManager, "BottomSheetDialog")
         }
 
+
+
     }
+
+
 }

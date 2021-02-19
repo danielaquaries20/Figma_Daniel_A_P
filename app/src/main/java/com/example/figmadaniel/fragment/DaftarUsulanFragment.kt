@@ -5,16 +5,10 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.fragment.app.FragmentActivity
-import androidx.fragment.app.FragmentManager
 import com.example.figmadaniel.R
-import com.example.figmadaniel.adapters.ViewPagerAdapter
-import kotlinx.android.synthetic.main.fragment_bahan_pangan.*
-import org.jetbrains.anko.sdk27.coroutines.onClick
 
 
-class BahanPanganFragment : Fragment() {
-
+class DaftarUsulanFragment : Fragment() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -25,15 +19,8 @@ class BahanPanganFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        return inflater.inflate(R.layout.fragment_bahan_pangan, container, false)
-
-       var iniDaftarPangan = true
-
-
-
+        // Inflate the layout for this fragment
+        return inflater.inflate(R.layout.fragment_daftar_usulan, container, false)
     }
-
-
-
 
 }

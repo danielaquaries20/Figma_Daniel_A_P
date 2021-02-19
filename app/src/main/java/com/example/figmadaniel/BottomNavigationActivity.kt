@@ -11,8 +11,8 @@ import kotlinx.android.synthetic.main.activity_bottom_navigation.*
 
 class BottomNavigationActivity : AppCompatActivity() {
 
-    private val bahanPanganFragment = BahanPanganFragment()
     private val giziIndividuFragment = GiziIndividuFragment()
+    private val bahanPanganFragment = BahanPanganFragment()
     private val giziPopulasiFragment = GiziPopulasiFragment()
     private val profilFragment = ProfilFragment()
 
@@ -24,8 +24,8 @@ class BottomNavigationActivity : AppCompatActivity() {
 
         bottomNavigation.setOnNavigationItemSelectedListener {
             when (it.itemId) {
-                R.id.bahanPangan -> replaceFragment(bahanPanganFragment)
                 R.id.giziIndividu -> replaceFragment(giziIndividuFragment)
+                R.id.bahanPangan -> replaceFragment(bahanPanganFragment)
                 R.id.giziPopulasi -> replaceFragment(giziPopulasiFragment)
                 R.id.profil -> replaceFragment(profilFragment)
             }

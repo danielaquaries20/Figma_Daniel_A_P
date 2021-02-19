@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".InformasiIndividuStep1Activity">
+    
+    <ImageView
+        android:id="@+id/ivBackInfoIndividu1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_back_mdpi"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_margin="@dimen/_17sdp"/>
+
+    <LinearLayout
+        android:id="@+id/linearInfoIndividu1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/_10sdp"
+        app:layout_constraintTop_toTopOf="parent"
+        android:gravity="center"
+        app:layout_constraintEnd_toStartOf="@id/textStep1InfoIndividu1"
+        app:layout_constraintStart_toEndOf="@id/ivBackInfoIndividu1">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/informasi_individu"
+            android:textStyle="bold"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/_12ssp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/wilayah"
+            android:textSize="@dimen/_12ssp"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textStep1InfoIndividu1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/_1_2_step"
+        android:textColor="@color/colorBlue"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_margin="@dimen/_17sdp"/>
+
+    <View
+        android:id="@+id/viewInfoIndividu1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_1sdp"
+        android:background="@color/colorGreen"
+        app:layout_constraintTop_toBottomOf="@id/linearInfoIndividu1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+    
+   <ScrollView
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       app:layout_constraintTop_toBottomOf="@id/linearInfoIndividu1"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintEnd_toEndOf="parent">
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="vertical"
+           android:padding="@dimen/_17sdp">
+
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:text="@string/provinsi"
+               android:textColor="@color/colorBlack" />
+
+           <Spinner
+               android:id="@+id/spinnerProvinsi"
+               android:layout_width="match_parent"
+               android:layout_height="@dimen/_35sdp"
+               android:background="@drawable/custom_background_edit_text"
+               android:layout_marginTop="@dimen/_10sdp"
+               android:scrollbars="none"
+               android:spinnerMode="dropdown"
+               android:paddingStart="@dimen/_10sdp"
+               android:paddingEnd="@dimen/_10sdp"/>
+
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:text="@string/kabupaten_kota"
+               android:textColor="@color/colorBlack"
+               android:layout_marginTop="@dimen/_17sdp"/>
+
+           <Spinner
+               android:id="@+id/spinnerKabupatenKota"
+               android:layout_width="match_parent"
+               android:layout_height="@dimen/_35sdp"
+               android:background="@drawable/custom_background_edit_text"
+               android:layout_marginTop="@dimen/_10sdp"
+               android:scrollbars="none"
+               android:spinnerMode="dropdown"
+               android:paddingStart="@dimen/_10sdp"
+               android:paddingEnd="@dimen/_10sdp"/>
+
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:text="@string/kecamatan"
+               android:textColor="@color/colorBlack"
+               android:layout_marginTop="@dimen/_17sdp"/>
+
+           <Spinner
+               android:id="@+id/spinnerKacamatan"
+               android:layout_width="match_parent"
+               android:layout_height="@dimen/_35sdp"
+               android:background="@drawable/custom_background_edit_text"
+               android:layout_marginTop="@dimen/_10sdp"
+               android:scrollbars="none"
+               android:spinnerMode="dropdown"
+               android:paddingStart="@dimen/_10sdp"
+               android:paddingEnd="@dimen/_10sdp"/>
+
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:text="@string/kelurahan_desa"
+               android:textColor="@color/colorBlack"
+               android:layout_marginTop="@dimen/_17sdp"/>
+
+           <Spinner
+               android:id="@+id/spinnerKeluarahanDesa"
+               android:layout_width="match_parent"
+               android:layout_height="@dimen/_35sdp"
+               android:background="@drawable/custom_background_edit_text"
+               android:layout_marginTop="@dimen/_10sdp"
+               android:scrollbars="none"
+               android:spinnerMode="dropdown"
+               android:paddingStart="@dimen/_10sdp"
+               android:paddingEnd="@dimen/_10sdp"/>
+
+
+       </LinearLayout>
+
+   </ScrollView>
+
+    <Button
+        android:id="@+id/buttonBatalOnfoIndividu1"
+        android:layout_width="@dimen/_125sdp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_17sdp"
+        android:layout_marginEnd="@dimen/_17sdp"
+        android:layout_marginBottom="@dimen/_50sdp"
+        android:background="@drawable/custom_background_edit_text"
+        android:text="@string/batal"
+        android:textAllCaps="false"
+        android:textColor="@color/colorBlack"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/buttonLanjutStep2" />
+
+    <Button
+        android:id="@+id/buttonLanjutStep2"
+        android:layout_width="@dimen/_125sdp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_17sdp"
+        android:layout_marginTop="@dimen/_17sdp"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:layout_marginBottom="@dimen/_50sdp"
+        android:background="@drawable/background_button_1"
+        android:text="@string/lanjut_step_2"
+        android:textAllCaps="false"
+        android:textColor="@color/colorWhite"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@id/buttonBatalOnfoIndividu1" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
