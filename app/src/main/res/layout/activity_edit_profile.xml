@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EditProfileActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_17sdp">
+
+            <ImageView
+                android:id="@+id/ivBackEditProfile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:contentDescription="@string/back"
+                android:src="@drawable/ic_back_mdpi" />
+
+            <TextView
+                android:id="@+id/textEditProfil"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ivBackEditProfile"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:text="@string/edit_profil"
+                android:textAlignment="textStart"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/_20ssp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/ivProfilPlaceholder"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textEditProfil"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:src="@drawable/ic_placeholder_profile_mdpi" />
+
+            <TextView
+                android:id="@+id/textFotoEditProfil"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textEditProfil"
+                android:layout_marginStart="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_23sdp"
+                android:layout_toEndOf="@id/ivProfilPlaceholder"
+                android:text="@string/foto"
+                android:textColor="@color/colorBlack" />
+
+            <TextView
+                android:id="@+id/textUkuranFoto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textFotoEditProfil"
+                android:layout_marginStart="@dimen/_15sdp"
+                android:layout_toEndOf="@id/ivProfilPlaceholder"
+                android:text="@string/ukuran_foto_maksimal_10_mb" />
+
+            <TextView
+                android:id="@+id/textNamaEditProfil"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ivProfilPlaceholder"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:text="@string/nama"
+                android:textAlignment="textStart"
+                android:textColor="@color/colorBlack" />
+
+            <EditText
+                android:id="@+id/editTextNama"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_35sdp"
+                android:layout_below="@id/textNamaEditProfil"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:background="@drawable/custom_background_edit_text" />
+
+            <TextView
+                android:id="@+id/textEmailEditProfil"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/editTextNama"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:text="@string/email"
+                android:textAlignment="textStart"
+                android:textColor="@color/colorBlack" />
+
+            <EditText
+                android:id="@+id/editTextEmail"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_35sdp"
+                android:layout_below="@id/textEmailEditProfil"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:background="@drawable/custom_background_edit_text" />
+
+            <TextView
+                android:id="@+id/textTelponEditProfil"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/editTextEmail"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:text="@string/no_telpon"
+                android:textAlignment="textStart"
+                android:textColor="@color/colorBlack" />
+
+            <EditText
+                android:id="@+id/editTextTelpon"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_35sdp"
+                android:layout_below="@id/textTelponEditProfil"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:background="@drawable/custom_background_edit_text" />
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/_20sdp"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/_17sdp"
+        android:paddingRight="@dimen/_17sdp"
+        android:weightSum="2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+
+        <Button
+            android:id="@+id/buttonSimpan"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_24sdp"
+            android:layout_marginEnd="@dimen/_17sdp"
+            android:layout_marginBottom="@dimen/_17sdp"
+            android:layout_weight="1"
+            android:background="@drawable/background_button_1"
+            android:text="@string/simpan"
+            android:textAllCaps="false"
+            android:textColor="@color/colorWhite" />
+
+        <Button
+            android:id="@+id/buttonEditKataSandi"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_17sdp"
+            android:layout_marginTop="@dimen/_24sdp"
+            android:layout_marginBottom="@dimen/_17sdp"
+            android:layout_weight="1"
+            android:background="@drawable/custom_background_edit_text"
+            android:text="@string/edit_kata_sandi"
+            android:textAllCaps="false"
+            android:textColor="@color/colorBlack" />
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

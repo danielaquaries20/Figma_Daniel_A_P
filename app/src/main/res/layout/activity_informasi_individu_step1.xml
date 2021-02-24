@@ -58,7 +58,7 @@
         android:id="@+id/viewInfoIndividu1"
         android:layout_width="match_parent"
         android:layout_height="@dimen/_1sdp"
-        android:background="@color/colorGreen"
+        android:background="@drawable/gradient_color_green"
         app:layout_constraintTop_toBottomOf="@id/linearInfoIndividu1"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"/>
@@ -83,16 +83,23 @@
                android:text="@string/provinsi"
                android:textColor="@color/colorBlack" />
 
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="@dimen/_35sdp"
+               android:layout_marginTop="@dimen/_10sdp"
+               android:background="@drawable/custom_background_edit_text">
+
            <Spinner
                android:id="@+id/spinnerProvinsi"
                android:layout_width="match_parent"
-               android:layout_height="@dimen/_35sdp"
-               android:background="@drawable/custom_background_edit_text"
-               android:layout_marginTop="@dimen/_10sdp"
+               android:layout_height="match_parent"
                android:scrollbars="none"
+               android:entries="@array/spinner_provinsi"
                android:spinnerMode="dropdown"
                android:paddingStart="@dimen/_10sdp"
                android:paddingEnd="@dimen/_10sdp"/>
+
+           </LinearLayout>
 
            <TextView
                android:layout_width="match_parent"
@@ -101,16 +108,23 @@
                android:textColor="@color/colorBlack"
                android:layout_marginTop="@dimen/_17sdp"/>
 
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="@dimen/_35sdp"
+           android:layout_marginTop="@dimen/_10sdp"
+           android:background="@drawable/custom_background_edit_text">
+
            <Spinner
                android:id="@+id/spinnerKabupatenKota"
                android:layout_width="match_parent"
-               android:layout_height="@dimen/_35sdp"
-               android:background="@drawable/custom_background_edit_text"
-               android:layout_marginTop="@dimen/_10sdp"
+               android:layout_height="match_parent"
                android:scrollbars="none"
+               android:entries="@array/spinner_kabupaten_kota"
                android:spinnerMode="dropdown"
                android:paddingStart="@dimen/_10sdp"
                android:paddingEnd="@dimen/_10sdp"/>
+
+       </LinearLayout>
 
            <TextView
                android:layout_width="match_parent"
@@ -119,16 +133,23 @@
                android:textColor="@color/colorBlack"
                android:layout_marginTop="@dimen/_17sdp"/>
 
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="@dimen/_35sdp"
+           android:layout_marginTop="@dimen/_10sdp"
+           android:background="@drawable/custom_background_edit_text">
+
            <Spinner
                android:id="@+id/spinnerKacamatan"
                android:layout_width="match_parent"
-               android:layout_height="@dimen/_35sdp"
-               android:background="@drawable/custom_background_edit_text"
-               android:layout_marginTop="@dimen/_10sdp"
+               android:layout_height="match_parent"
                android:scrollbars="none"
+               android:entries="@array/spinner_kecamatan"
                android:spinnerMode="dropdown"
                android:paddingStart="@dimen/_10sdp"
                android:paddingEnd="@dimen/_10sdp"/>
+
+       </LinearLayout>
 
            <TextView
                android:layout_width="match_parent"
@@ -137,16 +158,23 @@
                android:textColor="@color/colorBlack"
                android:layout_marginTop="@dimen/_17sdp"/>
 
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="@dimen/_35sdp"
+           android:layout_marginTop="@dimen/_10sdp"
+           android:background="@drawable/custom_background_edit_text">
+
            <Spinner
                android:id="@+id/spinnerKeluarahanDesa"
                android:layout_width="match_parent"
-               android:layout_height="@dimen/_35sdp"
-               android:background="@drawable/custom_background_edit_text"
-               android:layout_marginTop="@dimen/_10sdp"
+               android:layout_height="match_parent"
                android:scrollbars="none"
+               android:entries="@array/spinner_lurah_desa"
                android:spinnerMode="dropdown"
                android:paddingStart="@dimen/_10sdp"
                android:paddingEnd="@dimen/_10sdp"/>
+
+       </LinearLayout>
 
 
        </LinearLayout>

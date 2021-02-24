@@ -11,14 +11,16 @@ import kotlinx.android.synthetic.main.activity_bottom_navigation.*
 
 class BottomNavigationActivity : AppCompatActivity() {
 
-    private val giziIndividuFragment = GiziIndividuFragment()
-    private val bahanPanganFragment = BahanPanganFragment()
-    private val giziPopulasiFragment = GiziPopulasiFragment()
-    private val profilFragment = ProfilFragment()
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_bottom_navigation)
+
+        val giziIndividuFragment = GiziIndividuFragment()
+        val bahanPanganFragment = BahanPanganFragment()
+        val giziPopulasiFragment = GiziPopulasiFragment()
+        val profilFragment = ProfilFragment()
 
         replaceFragment(bahanPanganFragment)
 
@@ -35,10 +37,9 @@ class BottomNavigationActivity : AppCompatActivity() {
     }
 
     private fun replaceFragment(fragment: Fragment) {
-        if (fragment != null) {
-            val transaction = supportFragmentManager.beginTransaction()
-            transaction.replace(R.id.fragmentContainer, fragment)
-            transaction.commit()
+        supportFragmentManager.beginTransaction().apply {
+            replace(R.id.fragmentContainer, fragment)
+            commit()
         }
     }
 }

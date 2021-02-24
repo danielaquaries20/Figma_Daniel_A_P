@@ -13,69 +13,24 @@
         app:menu="@menu/action_bar_gizi_individu"
         app:title="@string/bahan_pangan" />
 
-    <LinearLayout
-        android:id="@+id/linearDaftar"
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tabLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/colorWhite"
-        android:orientation="horizontal">
+        app:tabGravity="fill"
+        app:tabMode="fixed"/>
 
-        <LinearLayout
-            android:id="@+id/linearDaftarPangan"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:orientation="vertical"
-            android:paddingTop="@dimen/_17sdp"
-            android:paddingStart="@dimen/_17sdp"
-            android:paddingEnd="@dimen/_13sdp">
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:lineSpacingExtra="@dimen/_2sdp"
-                android:text="@string/daftar_bahan_pangan"
-                android:textColor="@color/colorBlack"
-                android:textAlignment="center"/>
-
-            <View
-                android:id="@+id/viewDaftarPangan"
-                android:layout_width="match_parent"
-                android:layout_height="@dimen/_1sdp"
-                android:background="@color/colorGreen"/>
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:id="@+id/linearDaftarUsulan"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:orientation="vertical"
-            android:paddingTop="@dimen/_17sdp"
-            android:paddingStart="@dimen/_13sdp"
-            android:paddingEnd="@dimen/_17sdp">
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/daftar_usulan"
-                android:textColor="@color/colorBlack"
-                android:lineSpacingExtra="@dimen/_2sdp"
-                android:textAlignment="center"/>
-
-            <View
-                android:id="@+id/viewDaftarUsulan"
-                android:layout_width="match_parent"
-                android:layout_height="@dimen/_1sdp"
-                android:background="@color/colorGreen"/>
-
-        </LinearLayout>
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
 
 
 
 
-    </LinearLayout>
+
+
 
 
 </LinearLayout>

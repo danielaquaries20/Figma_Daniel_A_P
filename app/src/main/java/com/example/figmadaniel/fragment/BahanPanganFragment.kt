@@ -27,13 +27,20 @@ class BahanPanganFragment : Fragment() {
     ): View? {
         return inflater.inflate(R.layout.fragment_bahan_pangan, container, false)
 
-       var iniDaftarPangan = true
-
-
 
     }
 
 
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+
+        val fragmentAdapter = ViewPagerAdapter(childFragmentManager)
+        fragmentAdapter.addFragment(DaftarBahanPanganFragment(), "Daftar Bahan Pangan")
+        fragmentAdapter.addFragment(DaftarUsulanFragment(), "Daftar Usulan")
+        viewPager.adapter = fragmentAdapter
+        tabLayout.setupWithViewPager(viewPager)
+
+    }
 
 
 }

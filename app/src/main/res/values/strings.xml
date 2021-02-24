@@ -87,4 +87,67 @@
     <string name="tambah_data_populasi">Tambah Data Populasi</string>
     <string name="nama_populasi">Nama Populasi</string>
     <string name="tambahkan">Tambahkan</string>
+    <string name="anda_akan_keluar_dari_akun_ini_lanjutkan">Anda akan keluar dari akun ini, lanjutkan?</string>
+    <string name="lanjutkan">Lanjutkan</string>
+    <string name="foto">Foto</string>
+    <string name="ukuran_foto_maksimal_10_mb">Ukuran foto maksimal 10 Mb</string>
+    <string name="simpan">Simpan</string>
+    <string name="edit_kata_sandi">Edit Kata Sandi</string>
+    <string name="kata_sandi_lama">Kata Sandi Lama</string>
+    <string name="konfirmasi_kata_sandi_baru">Konfirmasi Kata Sandi Baru</string>
+    <string name="kata_sandi_baru">Kata Sandi Baru</string>
+    <string name="belum_ada_usulan_terkait_bahan_pangan">Belum ada usulan terkait bahan pangan</string>
+    <string name="jika_anda_memiliki_usulan_langsung_saja_usulkan">Jika anda memiliki usulan langsung saja usulkan!</string>
+    <string name="usulkan_bahan_pangan">Usulkan Bahan Pangan</string>
+    <string name="nama_bahan_pangan">Nama Bahan Pangan</string>
+    <string name="bdd">BDD</string>
+    <string name="persentase">%</string>
+    <string name="faktor_konfeksi">Faktor Konfeksi</string>
+
+    <string-array name="spinner_provinsi">
+        <item>Jawa Tengah</item>
+        <item>Jawa Barat</item>
+        <item>Jawa Timur</item>
+        <item>Sumatera Barat</item>
+        <item>Sumatera Utara</item>
+        <item>Sumatera Selatan</item>
+        <item>Papua Barat</item>
+    </string-array>
+
+    <string-array name="spinner_kabupaten_kota">
+        <item>Semarang</item>
+        <item>Banda Aceh</item>
+        <item>Jakarta</item>
+        <item>Bandung</item>
+        <item>Surabaya</item>
+        <item>Medan</item>
+        <item>Sabang</item>
+    </string-array>
+
+    <string-array name="spinner_kecamatan">
+        <item>Kecamatan Ungaran Barat</item>
+        <item>Kecamatan Ungaran Timur</item>
+        <item>Kecamatan Tembalang</item>
+        <item>Kecamatan Semarang Utara</item>
+        <item>Kecamatan Semarang Utara</item>
+        <item>Kecamatan Semarang Tengah</item>
+        <item>Kecamatan Tuntang</item>
+    </string-array>
+
+    <string-array name="spinner_lurah_desa">
+        <item>Desa Lerep</item>
+        <item>Lurah Sendangmulyo Semarang</item>
+        <item>Lurah Muktiharjo Kidul</item>
+        <item>Lurah Kalisari Sayung</item>
+        <item>Lurah Wonodri Semarang</item>
+        <item>Lurah Sambiroto Semarang</item>
+        <item>Lurah Helvetia Timur</item>
+    </string-array>
+
+    <string-array name="spinner_status_aktivitas">
+        <item>Aktif</item>
+        <item>Pasif</item>
+        <item>Tidak Aktif</item>
+    </string-array>
+
 </resources>
