@@ -24,7 +24,8 @@
                 android:textAlignment="center"
                 android:textColor="@color/colorBlack"
                 android:textSize="@dimen/_14ssp"
-                android:textStyle="bold" />
+                android:textStyle="bold"
+                android:focusableInTouchMode="true"/>
 
             <TextView
                 android:layout_width="match_parent"

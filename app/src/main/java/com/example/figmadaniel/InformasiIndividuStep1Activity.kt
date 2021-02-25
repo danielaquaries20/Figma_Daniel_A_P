@@ -12,6 +12,19 @@ class InformasiIndividuStep1Activity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_informasi_individu_step1)
 
+        //Image Back
+        ivBackInfoIndividu1.onClick { onBackPressed() }
+
+        //Button Batal
+        buttonBatalOnfoIndividu1.onClick { onBackPressed() }
+
+        //Button Lanjut Step 2
+        buttonLanjutStep2.onClick {
+            val intent = Intent(this@InformasiIndividuStep1Activity, InformasiIndividuStep2Activity::class.java)
+            startActivity(intent)
+        }
+
+
 
     }
 }

@@ -1,5 +1,6 @@
 package com.example.figmadaniel.fragment
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -12,9 +13,7 @@ import org.jetbrains.anko.sdk27.coroutines.onClick
 import org.jetbrains.anko.support.v4.startActivity
 
 
-/**
- * A simple [Fragment] subclass.
- */
+
 class GiziIndividuFragment : Fragment() {
 
     override fun onCreateView(
@@ -25,6 +24,16 @@ class GiziIndividuFragment : Fragment() {
         return inflater.inflate(R.layout.fragment_gizi_individu, container, false)
 
     }
-    
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+
+        //Button Tambah Individu
+        buttonTambahIndividu.onClick {
+            val intent = Intent(activity, InformasiIndividuStep1Activity::class.java)
+            startActivity(intent)
+        }
+    }
+
 
 }

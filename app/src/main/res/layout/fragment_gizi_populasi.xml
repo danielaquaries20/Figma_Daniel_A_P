@@ -65,6 +65,7 @@
         </ScrollView>
 
         <Button
+            android:id="@+id/buttonTambahPopulasi"
             android:layout_width="@dimen/_125sdp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"

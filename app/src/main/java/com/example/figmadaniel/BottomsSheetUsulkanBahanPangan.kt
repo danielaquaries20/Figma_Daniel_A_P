@@ -13,7 +13,7 @@ class BottomsSheetUsulkanBahanPangan : BottomSheetDialogFragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        return inflater.inflate(R.layout.fragment_daftar_bahan_pangan, container, false)
+        return inflater.inflate(R.layout.bottomsheet_usulkan_bahan_pangan, container, false)
     }
 }
 

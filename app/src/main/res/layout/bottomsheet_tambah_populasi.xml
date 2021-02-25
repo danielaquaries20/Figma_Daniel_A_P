@@ -23,7 +23,8 @@
                 android:text="@string/tambah_data_populasi"
                 android:textAlignment="center"
                 android:textColor="@color/colorBlack"
-                android:textStyle="bold" />
+                android:textStyle="bold"
+                android:focusableInTouchMode="true"/>
 
             <TextView
                 android:layout_width="match_parent"
